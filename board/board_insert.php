@@ -97,8 +97,8 @@
 
 	echo "
 		<script>
-		//location.href = 'board_list.php';
-		location.href = '../main/index.php';
+		location.href = 'board_list.php';
+		//location.href = '../include/index.php';
 		</script>
 	";
 ?>

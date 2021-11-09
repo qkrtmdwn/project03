@@ -5,7 +5,7 @@
 	<title>보건복지부</title>
 	<link rel="stylesheet" href="../include/css/common_layout.css" />
 	<link rel="stylesheet" href="../include/css/sub_common.css"/>
-	<link rel="stylesheet" href="../include/css/message.css" />
+	<link rel="stylesheet" href="../include/css/board.css" />
 	<link rel="icon" type="image/png" sizes="16x16"  href="../include/images/favicons/favicon-16x16.png">
 	<script src="../include/js/html5div.js"></script>
 	<script src="../include/js/html5shiv.js"></script>
@@ -13,20 +13,20 @@
 	<script src="../include/js/common.js"></script>
 	<script src="../include/js/subcommon.js"></script>
 	<script>
-	  function check_input() {
-	      if (!document.board_form.subject.value.trim())
+	  function checkInput() {
+	      if (!document.boardForm.subject.value.trim())
 	      {
 	          alert("제목을 입력하세요!");
-	          document.board_form.subject.focus();
+	          document.boardForm.subject.focus();
 	          return;
 	      }
-	      if (!document.board_form.content.value.trim())
+	      if (!document.boardForm.content.value.trim())
 	      {
 	          alert("내용을 입력하세요!");    
-	          document.board_form.content.focus();
+	          document.boardForm.content.focus();
 	          return;
 	      }
-	      document.board_form.submit();
+	      document.boardForm.submit();
 	   }
 	</script>
 </head>
@@ -111,7 +111,7 @@
 						</li>
 						<li><a href="sub03.php">자유게시판</a></li>
 					</ul>
-				</div>
+				</div> 
 			</div><!-- id="leftMenu" -->
 			<div id="rightContent" class="fr">
 				<div id="contentTit" class="cf">
@@ -122,8 +122,8 @@
 						<li class="last"><a href="../sub03/sub03.php">홈</a></li>
 					</ul>
 				</div><!--  id="contentTit" -->
-				<form  name="board_form" method="post" action="board_insert.php" enctype="multipart/form-data">
-		    	    <ul id="board_form">
+				<form  name="boardForm" method="post" action="board_insert.php" enctype="multipart/form-data">
+		    	    <ul id="boardForm">
 						<li>
 							<span class="col1">이름 : </span>
 							<span class="col2"><?=$username?></span>
@@ -132,7 +132,7 @@
 							<span class="col1">제목 : </span>
 							<span class="col2"><input name="subject" type="text"></span>
 						</li>    	
-			    		<li id="text_area">	
+			    		<li id="textArea">	
 			    			<span class="col1">내용 : </span>
 			    			<span class="col2">
 			    				<textarea name="content"></textarea>
@@ -143,20 +143,14 @@
 			    			<span class="col2"><input name="upfile" type="file"></span>
 			    		</li>
 		    	    </ul>
-			    	<ul class="buttons">
-			    		<li><button type="button" onclick="check_input()">완료</button></li>
+			    	<ul class="buttons cf">
+			    		<li><button type="button" onclick="checkInput()">완료</button></li>
 			    		<li><button type="button" onclick="location.href='board_list.php'">목록</button></li>
 			    	</ul>
 			    </form>
 			</div> <!-- id="rightContent" -->
 		</div><!-- id="content" -->
 	</div>	<!-- id="sub2Ct"	  -->
-   	<div id="board_box">
-	    <h3 id="board_title">
-	    	게시판 > 글 쓰기
-		</h3>
-	    
-	</div> <!-- message_box -->
 </section> 
 <footer>
 	<?php include "../include/footer.php";?>

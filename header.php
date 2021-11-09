@@ -69,7 +69,7 @@
 				<!-- <li><a href="./login/member_form.php">로그인(12ch)</a></li> -->
 <?php
 	}else{
-		$logged = $username."(".$userid.")님[Level:".$userlevel.", point:".$userpoint."]";
+		$logged = $username."님";
 ?>
 				<div id="join2">
 					<ul class="cf">

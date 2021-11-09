@@ -1,0 +1,41 @@
+#rightContent{width: 1060px;}
+		#contentTit{width: 1060px; height: 100px; border-bottom: 2px solid #dfdfdf; margin-bottom: 30px;}
+			#contentTit h2{float: left; color: #555555; margin-top: 43px; font-size: 35px; padding-left: 1px;}
+			#contentTit ul{float: right; padding: 20px 10px;}
+			#contentTit ul li{float: right; padding-left: 30px; background:url(../../include/images/subright.jpg) no-repeat 2px 2px;}
+			#contentTit ul li.first a{color: #23a089;}
+			#contentTit ul li.last{background: url(../../include/images/home.jpg) no-repeat 2px 3px;}
+			#contentTit ul li a{display: block; padding: 1px 2px; font-weight: bold; font-size: 16px;}
+
+/* 게시판 글쓰기(boardForm.php) */
+#boardForm span { display: inline-block; }
+#boardForm .col1 { width: 150px; } 
+#boardForm li {	padding: 12px; border-bottom: solid 1px #dddddd; }
+#boardForm input { width: 500px; height: 25px; }
+#boardForm textarea { width: 500px;	height: 150px; }
+#boardForm #textArea {	position: relative;	height: 158px; }
+#boardForm #textArea .col1 { position: absolute; top: 10px; }
+#boardForm #textArea .col2 { position: absolute; left: 166px; }
+#rightContent .buttons { text-align: right; margin: 20px 0 40px 0; }
+#rightContent .buttons li { display: block; float: right; margin-right: 15px;}
+#rightContent .buttons button { padding: 5px 10px; cursor: pointer; }
+/* 게시판 목록보기(boardList.php) */
+#boardList li { padding: 10px 0; border-bottom: solid 1px #dddddd; }
+#boardList span { display: inline-block; text-align: center;}
+#boardList .col1 { width: 80px; }
+#boardList .col2 { width: 330px; text-align: left;}
+#boardList .col2 a{ width: 330px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#boardList .col3 { width: 100px; }
+#boardList .col4 { width: 40px; }
+#boardList .col5 { width: 180px; }
+#boardList .col6 { width: 40px; }
+#pageNum {	text-align: center;	margin: 30px 0 }
+#pageNum li { display: inline; }
+/* 게시판 내용보기(board_view.php) */
+#boardBox { width: 800px; margin: 0 auto; }
+#boardBox .title { margin-top: 30px; padding: 10px; border-bottom: solid 2px #516e7f; font-size: 20px; }
+#viewContent li:nth-child(1) {	padding: 15px; border-bottom: solid 1px #aaaaaa; }
+#viewContent .col2 { float: right; }
+#viewContent li:nth-child(2) {	padding: 15px 15px 80px 15px; border-bottom: solid 1px #cccccc; }
+#viewContent li:nth-child(3) button { padding: 5px 20px; margin: 15px 0 40px 720px; cursor: pointer; }
+

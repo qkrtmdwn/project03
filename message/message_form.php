@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html>
 <head> 
 	<meta charset="utf-8" />
@@ -129,7 +129,7 @@
 						    <h3 id="writeTitle">
 						    		쪽지 보내기
 							</h3>
-							<ul class="toButtons">
+							<ul class="topButtons">
 									<li><span><a href="message_box.php?mode=rv">수신 쪽지함 </a></span></li>
 									<li><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
 							</ul>

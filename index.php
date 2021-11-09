@@ -77,13 +77,13 @@
 	<div class="quickmenu">
 		<ul>
 			<li class="first"><a href="#">Quick Menu</a></li>
-			<li><a href="../sub01/sub01.php">적극행정</a></li>
-			<li><a href="../sub02/sub02.php">민원이용안내</a></li>
-			<li><a href="../sub03/sub03.php">자유게시판</a></li>
-			<li><a href="../sub04/sub04.php">카드뉴스</a></li>
-			<li><a href="../sub05/sub05.php">쪽지쓰기</a></li>
-			<li><a href="../sub06/sub06.php">QnA게시판</a></li>
-			<li><a href="../login/login_form.php">로그인</a></li>
+			<li><a href="./sub01/sub01.php">적극행정</a></li>
+			<li><a href="./sub02/sub02.php">민원이용안내</a></li>
+			<li><a href="./board/board_form.php">자유게시판</a></li>
+			<li><a href="./sub04/sub04.php">카드뉴스</a></li>
+			<li><a href="./message/message_form.php">쪽지쓰기</a></li>
+			<li><a href="./sub06/sub06.php">QnA게시판</a></li>
+			<li><a href="./login/login_form.php">로그인</a></li>
 		</ul>
 	</div>
 	<div class="eventWrap">

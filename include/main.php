@@ -106,11 +106,11 @@
 							<li><a href="#panel1-5">입찰</a></li>
 							<li><a href="#panel1-6">법령</a></li>
 						</ul>
-						<div class="plus"><a href="sub02/sub02.php"><img src="images/plus.jpg" alt="더보기"/></a></div>
+						<div class="plus"><a href="../sub02/sub02.php"><img src="images/plus.jpg" alt="더보기"/></a></div>
 					</div>
 					<div class="panels">
 						<div class="panel" id="panel1-1">
-							<div class="dataMain fl"><a href="sub05/sub05.php">건강보험 거짓청구 요양기관 11개소 명단공표</a><!-- <img src="images/new.png" alt="new"/> -->
+							<div class="dataMain fl"><a href="../sub05/sub05.php">건강보험 거짓청구 요양기관 11개소 명단공표</a><!-- <img src="images/new.png" alt="new"/> -->
 							<div class="dataMainText">
 								<p>
 									<a href="sub05/sub05.php">건강보험 거짓청구 요양기관 11개소 명단공표 - 9월 6일(월) 12시부터 6개월간 보건복지부 누리집(www.mohw.go.kr)등에 공고-보건복지부(장관 권덕철)는 건강보험 요양급여비용을 거짓으로 청구</a>
@@ -119,15 +119,15 @@
 							</div>
 							<div class="datalist fr">
 								<ul>
-									<li class="cf"><a href="sub01/sub01.php">바이오공정 전문인력양성 본격 첫발을 내딛다</a><span><img src="images/new.png" alt="new"/></span></li>
-									<li class="cf"><a href="sub01/sub01.php">코로나19 예방접종 1차 접종자 3천만명, 전국민의 58.4% 돌파</a><span><img src="images/new.png" alt="new"/></span></li>
-									<li class="cf"><a href="sub01/sub01.php">차세대 사회조사정보시스템 1차 개통(9.6 오전 9시)</a><span><img src="images/new.png" alt="new"/></span></li>
-									<li class="cf"><a href="sub01/sub01.php">사회적 거리두기 4주연장(수도권 4단계, 비수도권 3단계)</a><span><img src="images/new.png" alt="new"/></span></li>
+									<li class="cf"><a href="../sub01/sub01.php">바이오공정 전문인력양성 본격 첫발을 내딛다</a><span><img src="images/new.png" alt="new"/></span></li>
+									<li class="cf"><a href="../sub01/sub01.php">코로나19 예방접종 1차 접종자 3천만명, 전국민의 58.4% 돌파</a><span><img src="images/new.png" alt="new"/></span></li>
+									<li class="cf"><a href="../sub01/sub01.php">차세대 사회조사정보시스템 1차 개통(9.6 오전 9시)</a><span><img src="images/new.png" alt="new"/></span></li>
+									<li class="cf"><a href="../sub01/sub01.php">사회적 거리두기 4주연장(수도권 4단계, 비수도권 3단계)</a><span><img src="images/new.png" alt="new"/></span></li>
 								</ul>
 							</div>
 						</div>
 						<div class="panel" id="panel1-2">
-							<div class="dataMain fl"><a href="sub05/sub05.php">제4차 산전연맹의료의향서 등록기관 지정 신청 안내</a><!-- <img src="images/new.png" alt="new"/> -->
+							<div class="dataMain fl"><a href="../sub05/sub05.php">제4차 산전연맹의료의향서 등록기관 지정 신청 안내</a><!-- <img src="images/new.png" alt="new"/> -->
 							<div class="dataMainText">
 								<p>
 									<a href="sub05/sub05.php">사전연명의료의향서 등록기관 4차 지정을 위한 신청접수를 첨부와 같이 안내하고니 등록기관 지정을 희망하는 기관에서는 기간 내에 신천하여 주시기 바랍니다.</a>

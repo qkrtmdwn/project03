@@ -1,5 +1,5 @@
-<meta charset='utf-8' />
-<?php 
+<meta charset='utf-8' /> 
+<?php  
 	include "../include/define.php";
 
 	$send_id = $_GET["send_id"];

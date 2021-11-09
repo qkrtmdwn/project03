@@ -1,8 +1,48 @@
-#rightContent{width: 1060px;}
-		#contentTit{width: 1060px; height: 100px; border-bottom: 2px solid #dfdfdf;}
+bady{background: red;}
+#rightContent{width: 1060px;} 
+		#contentTit{width: 1060px; height: 100px; border-bottom: 2px solid #dfdfdf; margin-bottom: 30px;}
 			#contentTit h2{float: left; color: #555555; margin-top: 43px; font-size: 35px; padding-left: 1px;}
 			#contentTit ul{float: right; padding: 20px 10px;}
 			#contentTit ul li{float: right; padding-left: 30px; background:url(../../include/images/subright.jpg) no-repeat 2px 2px;}
 			#contentTit ul li.first a{color: #23a089;}
 			#contentTit ul li.last{background: url(../../include/images/home.jpg) no-repeat 2px 3px;}
 			#contentTit ul li a{display: block; padding: 1px 2px; font-weight: bold; font-size: 16px;}
+
+/* 쪽지 보내기(message_form.php) */
+#messageBox { position: relative; width: 800px; margin: 0 auto; }
+#messageBox h3 { margin-top: 30px;	padding: 10px; border-bottom: solid 2px #efefef; font-size: 20px; }
+#writeMsg { padding: 0 20px; }
+#writeMsg span { display: inline-block; }
+#writeMsg .col1 { width: 150px; }
+#writeMsg li {	padding: 12px; border-bottom: solid 1px #dddddd; }
+#writeMsg input { width: 500px; height: 25px; }
+#writeMsg textarea { width: 500px;	height: 150px; }
+#writeMsg #textArea {	position: relative;	height: 158px; }
+#writeMsg #textArea .col1 { position: absolute; top: 10px; }
+#writeMsg #textArea .col2 { position: absolute; left: 166px; }
+#writeMsg button {	margin: 15px 0 30px 580px;	padding: 5px 23px; cursor: pointer; }
+/* 수신/송신 쪽지함(message_form.php) */
+#message li { padding: 10px; border-bottom: solid 1px #dddddd; }
+#message li:nth-child(1) { font-weight: bold; }
+#message span {	display: inline-block; text-align: center; }
+#message .title { font-weight: bold; }
+#message .col1 { width: 80px; }
+#message .col2 { width: 410px; text-align: left; }
+#message .col3 { width: 120px; }
+#message .col4 { width: 150px; }
+#pageNum {	text-align: center;	margin: 30px 0 }
+#pageNum li { display: inline; }
+#messageBox .topButtons  { text-align: right; margin: 20px 0 20px 0; }
+#messageBox .topButtons li { display: inline; margin-right: 20px; }
+#messageBox .topButtons a:link { text-decoration: underline; color: green; }
+#messageBox .topButtons a:visited { text-decoration: underline; color: green; }
+#messageBox .buttons { text-align: right; margin: 20px 0 40px 0; }
+#messageBox .buttons li { display: block; float: right; margin-right: 15px;}
+#messageBox .buttons button { padding: 5px 10px; cursor: pointer; }
+/* 쪽지함 보기(view_msg.php) */
+#messageBox { width: 800px; margin: 0 auto; }
+#messageBox .title { margin-top: 30px; padding: 10px; border-bottom: solid 2px #516e7f; font-size: 20px; }
+#viewContent li:nth-child(1) {	padding: 15px; border-bottom: solid 1px #aaaaaa; }
+#viewContent .col2 { float: right; }
+#viewContent li:nth-child(2) {	padding: 15px 15px 80px 15px; border-bottom: solid 1px #cccccc; }
+#viewContent li:nth-child(3) button { padding: 5px 20px; margin: 15px 0 40px 720px; cursor: pointer; }
