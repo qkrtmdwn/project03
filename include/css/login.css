@@ -1,0 +1,49 @@
+﻿/* body{background: url(../images/sub03.png) no-repeat center top;}  */
+
+	#search>input[type="text"]{width: 400px; height: 30px; border: 2px solid #23a089; font-size: 18px; color: #777777; font-weight: bold; padding-left: 10px; float: left;}
+
+	#rightContent{width: 1060px; }
+		#contentTit{width: 1060px; height: 100px; border-bottom: 2px solid #dfdfdf; margin-bottom: 20px;}
+			#contentTit h2{float: left; color: #555555; margin-top: 43px; font-size: 35px; padding-left: 1px;}
+			#contentTit ul{float: right; padding: 20px 10px;}
+			#contentTit ul li{float: right; padding-left: 30px; background:url(../../include/images/subright.jpg) no-repeat 2px 2px;}
+			#contentTit ul li.first a{color: #23a089;}
+			#contentTit ul li.last{background: url(../../include/images/home.jpg) no-repeat 2px 3px;}
+			#contentTit ul li a{display: block; padding: 1px 2px; font-weight: bold; font-size: 16px;}
+		
+		#mainCont{width: 1060px;}
+			.guide{border: 3px dotted #cfcfcf; padding: 10px; margin-bottom: 30px;}
+			.guide h3{color: #555555;}
+			.guide p{font-size: 14px; padding: 3px 0px;}
+			
+			.loginbox{width: 1060px; height: 680px; margin-bottom: 30px; padding: 18px; box-sizing: border-box;}
+			.idlogin{width: 500px; height: 500px; margin-right: 20px; box-sizing: border-box; border: 1px solid #dfdfdf;}
+			.idlogin h4{text-align: center; padding: 20px 0px 20px 0px;  background: #dfdfdf; color: #222222; margin-bottom: 20px;}
+			.idlogin fieldset{border: none; width: 438; padding: 0px 30px 30px 30px;}			
+			.login p input{padding: 10px; width: 350px; margin: 1px 32px;}
+			.login p .labelStyle{display: block; width: 100px; float: left; height: 40px; line-height: 40px; margin-left: 32px;}
+			#btnLogin{width: 374px; height: 50px; margin: 5px 32px; font-size: 16px; background: #23a089; color: #ffffff; border: 1px solid #23a089; cursor: pointer; font-weight: bold; border: 2px solid #efefef;}
+			.btn1{width: 350px; margin: 10px 32px;}
+			.btn1 label{margin-right: 52px;}
+			.btn2{width: 350px; margin: 10px 32px;}
+			.btn2 input{width: 150px; margin: 10px;}
+			
+			.certifylogin{width: 500px; height: 500px; box-sizing: border-box; border: 1px solid #dfdfdf;}
+			.certifylogin h4{text-align: center; padding: 20px 0px 20px 0px; margin-bottom: 50px; background: #dfdfdf; color: #222222;}
+			.certifylogin fieldset{border: none; width: 438; padding: 0px 30px 30px 30px;}
+			.certifylogin input{padding: 10px; width: 350px; margin: 1px 32px;}
+			.certifylogin p{padding: 10px 20px; font-size: 15px; line-height: 2; font-weight: bold; color: #333333; background: url(../../include/images/dot.png) no-repeat 7px 24px;}
+			
+			
+
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

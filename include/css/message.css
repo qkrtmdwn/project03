@@ -1,0 +1,8 @@
+#rightContent{width: 1060px;}
+		#contentTit{width: 1060px; height: 100px; border-bottom: 2px solid #dfdfdf;}
+			#contentTit h2{float: left; color: #555555; margin-top: 43px; font-size: 35px; padding-left: 1px;}
+			#contentTit ul{float: right; padding: 20px 10px;}
+			#contentTit ul li{float: right; padding-left: 30px; background:url(../../include/images/subright.jpg) no-repeat 2px 2px;}
+			#contentTit ul li.first a{color: #23a089;}
+			#contentTit ul li.last{background: url(../../include/images/home.jpg) no-repeat 2px 3px;}
+			#contentTit ul li a{display: block; padding: 1px 2px; font-weight: bold; font-size: 16px;}

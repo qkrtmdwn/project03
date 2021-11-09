@@ -1,0 +1,49 @@
+﻿/* body{background: url(../images/sub02.png) no-repeat center top;} */
+
+	#content{margin-bottom: 30px;}
+	
+	#rightContent{width: 1060px;}
+		#contentTit{width: 1060px; height: 100px; border-bottom: 2px solid #dfdfdf; margin-bottom: 20px;}
+			#contentTit h2{float: left; color: #555555; margin-top: 43px; font-size: 35px; padding-left: 1px;}
+			#contentTit ul{float: right; padding: 20px 10px;}
+			#contentTit ul li{float: right; padding-left: 30px; background:url(../../images/subright.jpg) no-repeat 2px 2px;}
+			#contentTit ul li.first a{color: #23a089;}
+			#contentTit ul li.last{background: url(../../images/home.jpg) no-repeat 2px 3px;}
+			#contentTit ul li a{display: block; padding: 1px 2px; font-weight: bold; font-size: 16px;}
+		
+		
+		#mainCont{width: 1060px;}
+			#mainCont .gallery{width: 1060px; height: 700px; background: #ffffff; float: left; clear: both;}
+			#mainCont .gallery .cardImg{width: 800px; height: 590px; margin: 0 auto; margin-top: 90px;}
+			#mainCont .gallery .cardImg p{display: none; }
+			#mainCont .gallery .cardImg p img{width: 800px;}
+			#mainCont .gallery .cardImg p .title{display: block; padding: 30px 20px; font-size: 22px; font-weight: bold; color: #333333; letter-spacing: -1px; background: url(../images/circle.png) no-repeat 0px 38px;}
+			#mainCont .gallery .cardImg p .date{display: block; padding-left: 710px; font-size: 17px; font-weight: bold; color: #333333;}
+			#mainCont .thumbnail{width: 1060px; height: 200px; float: left; position: relative; float: left; left: 5px; border: 2px solid #dfdfdf;}
+			#mainCont .thumbnail h3{text-align: center; background: #efefef; height: 40px; line-height: 40px; color: #333333;}
+			#mainCont .thumbnail .container{overflow: hidden; position: relative; height: 130px; width: 892px; left: 82px; top: 15px;}
+			#mainCont .thumbnail .container ul{width: 2676px;  position: absolute;}
+			#mainCont .thumbnail .container .thumb{height: 120px; width: 213px; margin-left: 26px; margin-left: 10px; float: left;}
+			#mainCont .thumbnail .container .thumb.mt{/* margin-top: 17px; */}
+			#mainCont .thumbnail .left{position: absolute; left: 15px; top: 50%; margin-top: -15px; width: 50px; cursor: pointer;}
+			#mainCont .thumbnail .right{position: absolute; right: 15px; top: 50%;  margin-top: -15px; cursor: pointer;}
+			#mainCont .thumbnail .container ul li img{height: 120px; width: 213px;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

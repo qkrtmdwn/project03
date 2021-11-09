@@ -1,0 +1,10 @@
+<?php 
+	define('DBhost','localhost');
+	define('DBuser','ashram7');
+	define('DBpass','ay2111!!');
+	define('DBname','ashram7');
+	//define('DBhost','localhost');
+	//define('DBuser','tmdwn023');
+	//define('DBpass','ay2111!!');
+	//define('DBname','tmdwn023');
+?>

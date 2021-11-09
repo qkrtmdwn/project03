@@ -1,0 +1,51 @@
+﻿		/* 서브 왼쪽 메뉴 */
+		#sub1Ct{width: 100%; margin: 0 auto; }
+			#content{width: 1420px; margin: 0 auto; }
+			#leftMenu{width: 323px; }
+			#leftMenu .menuTitle{width: 323px; height: 99px; height: 100px; border-bottom: 2px solid #dddddd;}
+			#leftMenu .menuTitle h2{padding-top: 50px;font-size: 30px; color: #444444; font-weight: bold; }
+			#leftMenu .menuList{width: 323px;}
+			#leftMenu .menuList>ul>li{border-bottom: 2px solid #dddddd; background: url(../images/bottom.jpg) no-repeat 290px 23px;}
+			#leftMenu .menuList>ul>li>a{display: block; font-size: 18px; font-weight: bold; color: #555555; padding: 20px 5px;}
+			#leftMenu .menuList>ul>li>ul{display: none;}
+			#leftMenu .menuList>ul>li img{display: block; float: right; margin-right: 4px;}
+			#leftMenu .menuList>ul>li.on{background: url(../images/top.jpg) no-repeat 290px 23px; background-color: #23a089;}
+			#leftMenu .menuList>ul>li.on>a{color: #ffffff; }		
+			#leftMenu .menuList .menuContent{padding: 10px 0px; background-color: #efefef;}	
+			#leftMenu .menuList .menuContent li{background: url(../images/dot.png) no-repeat 10px 20px; }		
+			#leftMenu .menuList ul li .menuContent li a{display: block; font-size: 16px; font-weight: bold; color: #777777; padding: 10px 20px; }		
+			#leftMenu .menuList ul li .menuContent li.on>a{color: #23a089;}
+		
+		
+		/* 로그인 박스 */
+		.loginBox{width: 293px; height: 120px; background: #efefef; border-bottom: 2px solid #dfdfdf; padding: 15px;}
+		.loginBox p{width: 50%; float: left; font-size: 16px;}
+		.loginBox p .bold{padding-left: 80px; font-weight: bold; color: #333333;}
+		.loginBox .memberInfo{width: 293px; height: 50px; margin-top: 28px;}
+		.loginBox .memberInfo ul li{width: 50%; float: left;padding-top: 10px;}
+		.loginBox .logoutBottom{width: 293px; height: 40px; background: #ffffff;}
+		.loginBox .logoutBottom ul li{float: left; width: 50%;}
+		.loginBox .logoutBottom ul li a{display: block; text-align: center; line-height: 40px; font-size: 14px;}
+		.loginBox .logoutBottom ul li a:hover{text-decoration: underline;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
