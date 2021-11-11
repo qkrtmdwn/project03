@@ -44,12 +44,12 @@
 				</div><!-- id="leftMenu" -->
 				<div id="rightContent" class="fr">
 					<div id="contentTit" class="cf">
-					<h2>로그인</h2>
-					<ul class="cf">
-						<li class="first"><a href="../sub03/sub03.php">로그인</a></li>
-						<li><a href="../sub03/sub03.php">회원관리</a></li>
-						<li class="last"><a href="../sub03/sub03.php">홈</a></li>
-					</ul>
+						<h2>로그인</h2>
+						<ul class="cf">
+							<li class="first"><a href="../sub03/sub03.php">로그인</a></li>
+							<li><a href="../sub03/sub03.php">회원관리</a></li>
+							<li class="last"><a href="../sub03/sub03.php">홈</a></li>
+						</ul>
 					</div><!--  id="contentTit" -->
 					<div id="mainCont">
 						<div class="loginbox cf">

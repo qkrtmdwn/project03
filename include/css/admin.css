@@ -1,0 +1,39 @@
+#rightContent{width: 1060px; }
+		#contentTit{width: 1060px; height: 100px; border-bottom: 2px solid #dfdfdf; margin-bottom: 20px;}
+			#contentTit h2{float: left; color: #555555; margin-top: 43px; font-size: 35px; padding-left: 1px;}
+			#contentTit ul{float: right; padding: 20px 10px;}
+			#contentTit ul li{float: right; padding-left: 30px; background:url(../images/subright.jpg) no-repeat 2px 2px;}
+			#contentTit ul li.first a{color: #23a089;}
+			#contentTit ul li.last{background: url(../images/home.jpg) no-repeat 2px 3px;}
+			#contentTit ul li a{display: block; padding: 1px 2px; font-weight: bold; font-size: 16px;}
+
+/* 관리자 회원 목록보기(admin_list.php) */
+#adminBox { width: 1060px; margin: 0 auto;}
+#adminBox h3#memberTitle { margin: 30px 0 10px 0; color: #333333;}
+#memberList { margin: 10px 0 30px 0;}
+#memberList li:nth-child(1) { font-weight: bold; border-top: solid 2px #dddddd; border-bottom: solid 2px #dddddd; background-color: #eeeeee;}
+#memberList li { padding: 10px 0; border-bottom: solid 1px #dddddd; }
+#memberList span { display: inline-block; text-align: center;}
+#memberList input { width: 40px; height: 20px; text-align: center;}
+#memberList button { padding: 3px 10px;}
+#memberList .col1 { width: 100px; }
+#memberList .col2 { width: 130px; }
+#memberList .col3 { width: 120px; }
+#memberList .col4 { width: 110px; }
+#memberList .col5 { width: 110px; }
+#memberList .col6 { width: 220px; }
+#memberList .col7 { width: 110px; }
+#memberList .col8 { width: 110px; }
+#adminBox h3#boardTitle { margin: 30px 0 10px 0; color:  #333333;}
+#boardList { margin: 10px 0 50px 0;}
+#boardList .col1 { width: 90px; }
+#boardList .col2 { width: 90px; }
+#boardList .col3 { width: 100px; }
+#boardList .col4 { width: 400px; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+#boardList .col5 { width: 180px; }
+#boardList .col6 { width: 170px; }
+#boardList li.title { font-weight: bold; border-top: solid 2px #dddddd; border-bottom: solid 2px #dddddd; background-color: #eeeeee; }
+#boardList li.title span.col4 { text-align: center; }
+#boardList li { padding: 10px 0; border-bottom: solid 1px #dddddd; }
+#boardList span { display: inline-block; text-align: center; }
+#boardList button { margin: 20px 0 0 20px; padding: 5px 10px;}

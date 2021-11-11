@@ -88,7 +88,7 @@
 ?>
 				<div id="join3">
 					<ul class="cf">
-						<li><a href="../login/admin.php">관리자 모드</a></li>
+						<li><a href="../admin/admin.php">관리자 모드</a></li>
 					</ul>
 				</div>
 				<!-- <li>|</li>
