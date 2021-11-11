@@ -99,7 +99,7 @@
 				<div id="data" class="fl cf" >
 					<div class="dataTop cf">
 						<ul class="cf">
-							<li><a href="#panel1-1" class="on">보도자료</a></li>
+							<li><a href="#panel1-1" class="on">최근게시물</a></li>
 							<li><a href="#panel1-2">공지사항</a></li>
 							<li><a href="#panel1-3">Q&A </a></li>
 							<li><a href="#panel1-4">행사</a></li>
@@ -110,19 +110,31 @@
 					</div>
 					<div class="panels">
 						<div class="panel" id="panel1-1">
-							<div class="dataMain fl"><a href="../sub05/sub05.php">건강보험 거짓청구 요양기관 11개소 명단공표</a><!-- <img src="images/new.png" alt="new"/> -->
-							<div class="dataMainText">
-								<p>
-									<a href="sub05/sub05.php">건강보험 거짓청구 요양기관 11개소 명단공표 - 9월 6일(월) 12시부터 6개월간 보건복지부 누리집(www.mohw.go.kr)등에 공고-보건복지부(장관 권덕철)는 건강보험 요양급여비용을 거짓으로 청구</a>
-								</p>
-							</div>
-							</div>
-							<div class="datalist fr">
+							<div class="datalist1">
 								<ul>
-									<li class="cf"><a href="../sub01/sub01.php">바이오공정 전문인력양성 본격 첫발을 내딛다</a><span><img src="images/new.png" alt="new"/></span></li>
-									<li class="cf"><a href="../sub01/sub01.php">코로나19 예방접종 1차 접종자 3천만명, 전국민의 58.4% 돌파</a><span><img src="images/new.png" alt="new"/></span></li>
-									<li class="cf"><a href="../sub01/sub01.php">차세대 사회조사정보시스템 1차 개통(9.6 오전 9시)</a><span><img src="images/new.png" alt="new"/></span></li>
-									<li class="cf"><a href="../sub01/sub01.php">사회적 거리두기 4주연장(수도권 4단계, 비수도권 3단계)</a><span><img src="images/new.png" alt="new"/></span></li>
+	<?php
+	    $con = mysqli_connect(DBhost, DBuser, DBpass, DBname); // 총 01/21개 페이지 수정
+	    $sql = "select * from board order by num desc limit 6";
+	    $result = mysqli_query($con, $sql);
+
+	    if (!$result)
+	        echo "게시판 DB 테이블(board)이 생성 전이거나 아직 게시글이 없습니다!";
+	    else
+	    {
+	        while( $row = mysqli_fetch_array($result) )
+	        {
+	            $regist_day = substr($row["regist_day"], 0, 10);
+	?>       
+				                    <li class="cf">
+				                        <a href="../board/board_list.php"><?=$row["subject"]?></a>
+				                        <span><?=$row["name"]?></span>
+				                        <span><?=$regist_day?></span>
+				                        <span><img src="images/new.png" alt="new"/></span>
+				                    </li>          
+	<?php
+	        }
+	    }
+	?>
 								</ul>
 							</div>
 						</div>

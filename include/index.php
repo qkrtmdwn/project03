@@ -30,7 +30,7 @@
 			<img src="images/popup.png" width="600" alt="팝업이미지"/> 
 			<button>닫기</button>
 		</div>
-	</div>
+	</div> 
 	<span class="quick"><span class="indent">퀵메뉴닫기</span></span>
 	<div class="quickmenu">
 		<ul>

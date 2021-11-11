@@ -14,25 +14,25 @@
 	<script src="../include/js/subcommon.js"></script>
 	<script>
 	  function checkInput() {
-	  	  if (!document.message_form.rv_id.value.trim())
+	  	  if (!document.messageForm.rv_id.value.trim())
 	      {
 	          alert("수신 아이디를 입력하세요!");
-	          document.message_form.rv_id.focus();
+	          document.messageForm.rv_id.focus();
 	          return;
 	      }
-	      if (!document.message_form.subject.value.trim())
+	      if (!document.messageForm.subject.value.trim())
 	      {
 	          alert("제목을 입력하세요!"); 
-	          document.message_form.subject.focus();
+	          document.messageForm.subject.focus();
 	          return;
 	      }
-	      if (!document.message_form.content.value.trim())
+	      if (!document.messageForm.content.value.trim())
 	      {
 	          alert("내용을 입력하세요!");    
-	          document.message_form.content.focus();
+	          document.messageForm.content.focus();
 	          return;
 	      }
-	      document.message_form.submit();
+	      document.messageForm.submit();
 	   }
 	</script>
 </head>
@@ -134,7 +134,7 @@
 									<li><span><a href="message_box.php?mode=send">송신 쪽지함</a></span></li>
 							</ul>
 						    <form  name="messageForm" method="post" action="message_insert.php?send_id=<?=$userid?>">
-						    	<div id="writeMsg">
+						    	<div id="writeMsg" class="cf">
 						    	    <ul>
 										<li>
 											<span class="col1">보내는 사람 : </span>

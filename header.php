@@ -241,7 +241,7 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="sub03/sub03.php" class="showBalloon" title="참여 패이지" tabindex="3">참여</a>
+					<li><a href="board/board_list.php" class="showBalloon" title="참여 패이지" tabindex="3">참여</a>
 						<div class="policy width100 cf lf">
 							<ul class="twoDepth cf">
 								<li class="fl">

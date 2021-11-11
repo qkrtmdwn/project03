@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head> 
 	<meta charset="utf-8" />
-	<title>보건복지부</title>
+	<title>PHP 프로그래밍</title>
 	<link rel="stylesheet" href="../include/css/common_layout.css" />
 	<link rel="stylesheet" href="../include/css/sub_common.css"/>
 	<link rel="stylesheet" href="../include/css/board.css" />
@@ -13,21 +13,21 @@
 	<script src="../include/js/common.js"></script>
 	<script src="../include/js/subcommon.js"></script>
 	<script>
-	  function checkInput() {
-	      if (!document.boardForm.subject.value.trim())
-	      {
-	          alert("제목을 입력하세요!");
-	          document.boardForm.subject.focus();
-	          return;
-	      }
-	      if (!document.boardForm.content.value.trim())
-	      {
-	          alert("내용을 입력하세요!");    
-	          document.boardForm.content.focus();
-	          return;
-	      }
-	      document.boardForm.submit();
-	   }
+		function checkInput() {
+			if (!document.boardForm.subject.value)
+			{
+				alert("제목을 입력하세요!");
+				document.boardForm.subject.focus();
+				return;
+			}
+			if (!document.boardForm.content.value)
+			{
+				alert("내용을 입력하세요!");    
+				document.boardForm.content.focus();
+				return;
+			}
+			document.boardForm.submit();
+		 }
 	</script>
 </head>
 <body> 
@@ -122,32 +122,47 @@
 						<li class="last"><a href="../sub03/sub03.php">홈</a></li>
 					</ul>
 				</div><!--  id="contentTit" -->
-				<form  name="boardForm" method="post" action="board_insert.php" enctype="multipart/form-data">
-		    	    <ul id="boardForm">
-						<li>
-							<span class="col1">이름</span>
-							<span class="col2"><?=$username?></span>
-						</li>	
-						<li>
-							<span class="col1">제목</span>
-							<span class="col2"><input name="subject" type="text"></span>
-						</li>    	
-			    		<li id="textArea">	
-			    			<span class="col1">내용</span>
-			    			<span class="col2">
-			    				<textarea name="content"></textarea>
-			    			</span>
-			    		</li>
-			    		<li>	
-			    			<span class="col1">첨부 파일</span>
-			    			<span class="col2"><input name="upfile" type="file"></span>
-			    		</li>
-		    	    </ul>
-			    	<ul class="buttons cf">
-			    		<li><button type="button" onclick="checkInput()">완료</button></li>
-			    		<li><button type="button" onclick="location.href='board_list.php'">목록</button></li>
-			    	</ul>
-			    </form>
+				<div id="boardBox">
+	<?php
+		$num  = $_GET["num"];
+		$page = $_GET["page"];
+		
+		$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
+		$sql = "select * from board where num=$num";
+		$result = mysqli_query($con, $sql);
+		$row = mysqli_fetch_array($result);
+		$name       = $row["name"];
+		$subject    = $row["subject"];
+		$content    = $row["content"];		
+		$file_name  = $row["file_name"];
+	?>
+					<form  name="boardForm" method="post" action="board_modify.php?num=<?=$num?>&page=<?=$page?>" enctype="multipart/form-data">
+						<ul id="boardForm">
+							<li>
+								<span class="col1">이름 : </span>
+								<span class="col2"><?=$name?></span>
+							</li>		
+							<li>
+								<span class="col1">제목 : </span>
+								<span class="col2"><input name="subject" type="text" value="<?=$subject?>"></span>
+							</li>
+							<li id="textArea">	
+								<span class="col1">내용 : </span>
+								<span class="col2">
+									<textarea name="content"><?=$content?></textarea>
+								</span>
+							</li>
+							<li>
+								<span class="col1"> 첨부 파일 : </span>
+								<span class="col2"><?=$file_name?></span>
+							</li>
+						</ul>
+						<ul class="buttons">
+							<li><button type="button" onclick="checkInput()">수정하기</button></li>
+							<li><button type="button" onclick="location.href='board_list.php'">목록</button></li>
+						</ul>
+					</form>
+				</div> <!-- board_box -->
 			</div> <!-- id="rightContent" -->
 		</div><!-- id="content" -->
 	</div>	<!-- id="sub2Ct"	  -->

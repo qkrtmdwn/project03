@@ -116,7 +116,20 @@
 							<p>타인의 저작원을 포함한 지적재산권 및 기타관리를 침해하는 내용물은 등록할 수 없으며, 이와 같은 게시물로 인해 발생하는 결과에 대한 책임은 작석자 본인에게 있습니다.</p>
 						</div>
 						<div class="leftBottom">총31185건이 검색되었습니다.</div>
-						<form action="search_result.php" method="get" class="searcharea cf" />
+	<?php
+	
+		$catagory = $_GET['catgo'];
+	 	$search_con = $_GET['search'];
+
+	    if($catagory=='subject'){
+	        $catname = '제목';
+	    } else if($catagory=='name'){
+	        $catname = '글쓴이';
+	    } else if($catagory=='content'){
+	        $catname = '내용';
+	    }
+	?>
+						<form action="search_result.php" method="get" class="searcharea cf" >
 							<input type="text" name="search" placeholder="검색어를 입력하세요." required="required"/>
 							<select name="catgo" id="search2">
 								<option value="subject">제목</option>
@@ -124,6 +137,17 @@
 								<option value="content">작성자</option>
 							</select>
 						</form>
+						<!-- <form action="search_result.php" method="get" class="searcharea cf">
+							<select name="catgo">
+								<option value="subject">제목</option>
+								<option value="name">글쓴이</option>
+								<option value="content">내용</option>
+							</select>
+							<span class="idtxt active">
+								<input type="text" name="search" required="required" placeholder="검색 내용을 입력해주세요."/>
+							</span>
+							<button id="evebtn">검색</button>
+						</form> -->
 					</div> <!-- id="contData" -->
 					<div id="boardBox">
 						<ul id="boardList">
@@ -135,44 +159,44 @@
 								<span class="col5">등록일</span>
 								<span class="col6">조회</span>
 							</li>
-	<?php 
+	<?php
+	    $con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
+		$sql2 = "select * from board where $catagory like '%$search_con%' order by num desc";
+		$result2 = mysqli_query($con, $sql2);
+		$total_record2 = mysqli_num_rows($result2); // 전체 글 수
+
 		if (isset($_GET["page"]))
-			$page = $_GET['page'];
+			$page = $_GET["page"];
 		else
 			$page = 1;
 
-		$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
-		$sql = "select * from board order by num desc";
-		$result = mysqli_query($con, $sql);
-		$total_record = mysqli_num_rows($result);
-
 		$scale = 10;
 
-		//전체 페이지 수 ($total_page) 계산
-		if($total_record % $scale == 0)
-			$total_page = floor($total_record/$scale);
+		// 전체 페이지 수($total_page) 계산 
+		if ($total_record2 % $scale == 0)     
+			$total_page = floor($total_record2/$scale);      
 		else
-			$total_page = floor($total_record/$scale) +1;
+			$total_page = floor($total_record2/$scale) + 1; 
+	 
+		// 표시할 페이지($page)에 따라 $start 계산  
+		$start = ($page - 1) * $scale;      
 
-		//표시할 페이지($page)에 따라 $start 계산
-		$start = ($page -1) * $scale;
+		$number = $total_record2 - $start;
 
-		$number = $total_record - $start;
-
-		for($i=$start; $i<$start+$scale && $i < $total_record; $i++)
+		for ($i=$start; $i<$start+$scale && $i < $total_record2; $i++)
 		{
-			mysqli_data_seek($result, $i);
-			//가져올 레코드로 위치(포인터) 이동
-			$row =mysqli_fetch_array($result);
-			//하나의 레코드 가져오기
-			$num = $row["num"];
-			$id = $row["id"];
-			$name = $row["name"];
-			$subject = $row["subject"];
-			$regist_day = $row["regist_day"];
-			$hit = $row["hit"];
-			if($row["file_name"])
-				$file_image = "<img src='../img/file.gif'>";
+			mysqli_data_seek($result2, $i);
+			// 가져올 레코드로 위치(포인터) 이동
+			$row = mysqli_fetch_array($result2);
+			// 하나의 레코드 가져오기
+			$num         = $row["num"];
+			$id          = $row["id"];
+			$name        = $row["name"];
+			$subject     = $row["subject"];
+			$regist_day  = $row["regist_day"];
+			$hit         = $row["hit"];
+			if ($row["file_name"])
+				$file_image = "<img src='./images/file.gif'>";
 			else
 				$file_image = " ";
 	?>

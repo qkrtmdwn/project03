@@ -82,10 +82,8 @@ a:visited{color: #333333;}
 	/* 메뉴 oneDepth */
 	#Menu1{width: 100%; margin: 0 auto;  background: #ffffff; border-bottom: 1px solid #dddddd; border-top: 1px solid #dddddd; position: relative;}
 		#Menu1 .oneDepth{width: 1420px; margin: 0 auto; height: 72px; line-height: 72px;}
-		#Menu1>ul>li{float: left;}
-		#Menu1 .oneDepth>li>a{display: block; font-size: 20px; font-weight: bold; color: #333333; padding: 0px 63px;}
-		#Menu1 .oneDepth>li>a.first{padding-left: 65px;}
-		#Menu1 .oneDepth>li>a.last{padding-right: 65px;}
+		#Menu1>ul>li{float: left; width: 177px;}
+		#Menu1 .oneDepth>li>a{display: block; font-size: 20px; font-weight: bold; color: #333333; text-align: center;}
 		#Menu1 li.on>a{color: #21a089;}
 		
 	/* 메뉴 twoDepth */

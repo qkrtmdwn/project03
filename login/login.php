@@ -48,7 +48,7 @@
 			echo("
 				<script>
 					// location.href = '../index.php';
-					location.href = '../include/index.php';
+					location.href = '../board/board_form.php';
 				</script>
 				"); 
 		}

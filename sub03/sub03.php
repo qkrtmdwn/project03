@@ -103,14 +103,14 @@
 					</div>
 				</div><!-- id="leftMenu" -->
 				<div id="rightContent" class="fr">
-						<div id="contentTit" class="cf">
+					<div id="contentTit" class="cf">
 						<h2>자유게시판</h2>
 						<ul class="cf">
 							<li class="first"><a href="../sub03/sub03.php">자유게시판</a></li>
 							<li><a href="../sub03/sub03.php">참여</a></li>
 							<li class="last"><a href="../sub03/sub03.php">홈</a></li>
 						</ul>
-						</div><!--  id="contentTit" -->
+					</div><!--  id="contentTit" -->
 					<div id="contentDt">
 						<div class="textBox">
 							<p>본 게시판은 자유롭게 의견을 게시하는 공간으로 작성된 의견은 회신되지 않습니다.</p>

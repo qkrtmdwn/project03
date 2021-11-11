@@ -242,7 +242,7 @@
 	});
 	function moveSlider(index){
 		var willMoveLeft = -(index%4*panelWidth);
-		$('#contwrap').animate({left:willMoveLeft},'200');
+		$('#contwrap').animate({left:willMoveLeft},{duration: 600, queue:false, easeing: 'easeOutCubic'});
 		$('#mainCont .controlBtn[data-index='+index+']').addClass('active');
 		$('#mainCont .controlBtn[data-index!='+index+']').removeClass('active');
 		randomNumber = index;

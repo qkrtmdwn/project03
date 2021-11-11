@@ -238,7 +238,7 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="../sub03/sub03.php" class="showBalloon" title="참여 패이지" tabindex="3">참여</a>
+					<li><a href="../board/board_list.php" class="showBalloon" title="참여 패이지" tabindex="3">참여</a>
 						<div class="policy width100 cf lf">
 							<ul class="twoDepth cf">
 								<li class="fl">
@@ -627,7 +627,7 @@
 							</ul>
 						</div>
 					</li>
-					<li><a href="../sub03/sub03.php" title="이용안내 페이지" tabindex="8" class="last showBalloon">이용안내</a>
+					<li><a href="../board/board_list.php" title="이용안내 페이지" tabindex="8" class="last showBalloon">이용안내</a>
 						<div class="institute width100 cf lf">
 							<ul class="twoDepth cf">
 								<li class="fl">
